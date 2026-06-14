@@ -54,7 +54,7 @@ def make_art_classifier(model):
     return PyTorchClassifier(
         model=model, loss=nn.CrossEntropyLoss(),
         optimizer=torch.optim.Adam(model.parameters(), lr=1e-3),
-        input_shape=(next(model.parameters()).shape[1] if False else model.net[0].in_features,),
+        input_shape=(model.net[0].in_features,),
         nb_classes=2, clip_values=(0.0, 1.0))
 
 

@@ -153,7 +153,7 @@ def fig_pipeline():
     fig, ax = plt.subplots(figsize=(10, 2.4)); ax.axis("off")
     stages = [("Датасет\nVrbancic\n58 645×111", BLUE),
               ("Детектори\nRF · MLP", BLUE),
-              ("Atака ухилення\nFGSM · PGD\n(маски)", RED),
+              ("Атака ухилення\nFGSM · PGD\n(маски)", RED),
               ("Захист\nadversarial\ntraining", GREEN),
               ("Оцінка\nповні метрики", GRAY)]
     x = 0.02; w = 0.16; gap = (1 - len(stages)*w) / (len(stages)-1) - 0.005
