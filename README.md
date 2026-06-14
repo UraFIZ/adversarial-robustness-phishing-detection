@@ -71,6 +71,10 @@ python src/madry_one.py 0.10 15
 
 # 5. Усі рисунки
 python src/make_figures.py               # -> figures/*.png
+
+# 6. Перевірка на gradient masking (тренує захищену модель і запускає тести Athalye)
+python src/train_defended.py
+python src/gradient_masking_check.py    # -> results/gradient_masking_check.json
 ```
 
 ---
