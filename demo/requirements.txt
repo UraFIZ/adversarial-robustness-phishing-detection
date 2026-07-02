@@ -1,0 +1,8 @@
+# Демо: адверсаріальна стійкість ML-детектора фішингу
+# Встановлення:  pip install -r requirements.txt
+torch
+adversarial-robustness-toolbox
+scikit-learn
+numpy
+pandas
+matplotlib
